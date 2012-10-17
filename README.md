@@ -22,4 +22,17 @@ array(
 );
 ```
 
+Make sure you name each module layout file differently. As an example:
+Module called "Dialogue" would have its layout file "ApplicationName/module/Dialogue/view/layout/dialogue.phtml" and configuration set to
+```php
+    'module_layouts' => array(
+        'Dialogue' => 'layout/dialogue.phtml',
+    ),
+```
+And module called "Moderation" would have its layout file "ApplicationName/module/Moderation/view/layout/moderation.phtml" and configuration set to
+```php
+    'module_layouts' => array(
+        'Moderation' => 'layout/moderation.phtml',
+    ),
+```
 That's it!
